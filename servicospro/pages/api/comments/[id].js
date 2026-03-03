@@ -1,5 +1,5 @@
-import sql from "../../../../lib/db";
-import { requireAdmin } from "../../../../lib/auth";
+import sql from "../../../lib/db";
+import { requireAdmin } from "../../../lib/auth";
 
 export default async function handler(req, res) {
   if (req.method !== "PATCH") return res.status(405).end();
